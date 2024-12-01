@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>CAR  COUNT  DETECTION SYSTEM</title>
+  </head>
+
+  <!-- <body> -->
+
+<nav class="nav nav-pills nav-justified navbar-dark bg-dark">
+        
+        
+   	
+
+{% if session['sadminname']=='admin' %}
+<!-- <a class="nav-item nav-link active" href="viewappointment">View appointment</a> -->
+<a class="nav-item nav-link" href="/logout" >Logout</a>
+
+{% elif session['susername']=='user' %}
+<a class="nav-item nav-link active" href="attribute">Video</a>
+<a class="nav-item nav-link"  href="/logout" >Logout</a>
+
+{% else %}
+
+<a class="nav-item nav-link active" href="showSignUp" >Register</a>
+<a class="nav-item nav-link" href="/" >Login</a>
+		  
+{% endif %}
+
+   </nav>
+				
+	</div>
+	<!--Navigation Part Ends -->
+</div>
+<img src='static/banner.jpg' width='100%' height='300px' >
+            		
+                    
+				

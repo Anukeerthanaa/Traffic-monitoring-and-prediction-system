@@ -1,0 +1,30 @@
+
+{% include 'header.html' %}
+      <div class="container">
+          <h2 style="color: rgb(24, 163, 255);" class=" text-center mt-3">CAR  COUNT  DETECTION SYSTEM</h2>
+     <h3 class="mt-5"> Your Probability of getting infected is : {{ inf }}</h3>
+	 
+	 {% if inf <  40 %}
+<h2 style="color:green;">Stretching Excercise</h2>
+	<h3>Shoulder Stretching</h3>
+	<h3>Hip bridging</h3>
+	<h3>Leg Lift</h3>
+	<h3>Knee extension</h3>
+	
+{% elif inf > 41  and inf < 79 %}
+<h2 style="color:blue;">Breathing Excercise</h2>
+	<h3>Shoulder Pumping</h3>
+	<h3>Deep breathing</h3>
+	<h3>Segmental breathing</h3>
+	<h3>Huffing</h3>
+	<h3>Pranayama</h3>
+	<h3>Shoulder lifts</h3>
+{% elif inf > 80 %}
+	<h2 style="color:red;">Cardio Excercise</h2>
+	<h3>Walking</h3>
+	<h3>Jogging</h3>
+	<h3>Cycling</h3>
+	<h3>Slow Running</h3>
+	{% endif %}	
+	 
+{% include 'footer.html' %}
